@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 14px; text-align: center; margin-top: 80px;}
+    .attribution a { color: hsl(228, 45%, 44%);
+     }
+    .box{
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;
+      
+    }
+    .blue-box{
+      display:flex;
+      flex-direction: column;
+      background-color:RGB(87 61 248);
+      padding: 20px;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+      width: 230px;
+    }
+    .white-box{
+      display:flex;
+      flex-direction: column;
+      background-color: rgb(255, 255, 255);
+      padding: 20px;
+      padding-right: 34px;
+      padding-left: 28px;
+      border-radius: 20px;
+      width: 230px;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    .result{
+      text-align: center;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 23px;
+    }
+    .marks{
+      width: 120px;
+      border-radius: 50%;
+      height: 120px;
+      display:flex;
+      flex-direction: column;
+      background-color: aquamarine;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      background: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+    }
+    .m-obtained{
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 45px;
+
+    }
+    .total-m{
+      color: RGB(127 114 253);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      margin-top: 5px;
+
+    }
+    .great{
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 550;
+      font-size: 20px;
+      margin-bottom: 5px;
+      margin-top: 22px;
+    }
+    .para{
+      color: rgb(243, 243, 243);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 18px;
+      font-size: 12px;
+      width: 180px;
+      text-align: center;
+    }
+    .sum{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .reaction{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      
+      border-radius: 6px;
+      height: 45px;
+      margin-bottom: 15px;;
+
+    }
+    
+    .r1{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 90px;
+    }
+    .r2{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 75px;
+    }
+    button{
+      background-color: RGB(48 59 89);
+      border: none;
+      height: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      color: white;
+      border-radius: 20px;
+
+    }
+    @media (max-width: 600px){
+      .box{
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+      
+    }
+
+    }
+      
+   
+  </style>
+</head>
+<body>
+
+ <div class="box"> 
+  <div class="blue-box">
+    <p class="result">Your Result</p>
+  <div class="marks">
+    <div class="m-obtained"> 76 </div>
+    <div class="total-m">of 100</div>
+  </div>
+
+<p class="great"> Great</p>
+<p class="para"> You scored higher than 65% of the people who have taken these tests.</p>
+  </div>
+  <div class="white-box">
+  <p class="sum">Summary</p>
+<div class="reaction" style="background-color: RGB(255 246 245);">
+  <div class="r1" style="color: RGB(246 142 141);"><img src="assets\images\icon-reaction.svg" alt="">
+Reaction</div>
+ <div> 80 / 100</div>
+</div>
+<div class="reaction" style="background-color:RGB(255 251 242);">
+  <div class="r1" style="color: RGB(248 202 109);"><img src="assets\images\icon-memory.svg" alt="">
+Memory</div>
+ <div> 92 / 100</div>
+</div>
+<div class="reaction" style="background-color:RGB(242 251 250);">
+  <div class="r2" style="color: RGB(76 179 155);"><img src="assets\images\icon-verbal.svg" alt="">
+Verbal</div>
+ <div> 61 / 100</div>
+</div>
+<div class="reaction" style="background-color: RGB(243 243 253);">
+  <div class="r2" style="color: RGB(66 69 195);"><img src="assets\images\icon-visual.svg" alt="">
+Visual</div>
+ <div> 72 / 100</div>
+</div>
+<button>Continue</button>
+ </div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ramani</a>.
+  </div>
+</body>
+</html>
